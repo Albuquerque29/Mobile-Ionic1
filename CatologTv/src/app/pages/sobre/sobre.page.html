@@ -1,33 +1,42 @@
 <ion-header>
   <ion-toolbar>
-
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-
     <ion-title>Sobre o Projeto</ion-title>
-
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="sobre-container">
-  
-
-  <div class="image-container">
-    <img src="sobre.jpeg" alt="Imagem do Grupo" />
-  </div>
-
-
+<ion-content [fullscreen]="true">
   <div class="description-container">
-    <h2>Sobre o Nosso Projeto</h2>
-    <p>
-     Este projeto foi desenvolvido para a cadeira CÓDIGOS DE ALTA PERFORMANCE MOBILE, com o objetivo de fazer 3 telas e consumir uma API pública a qual está sendo usada
-     nesse projeto é a TMDB, com o entuito de listar filmes populares e puxar da API e detalhar sobre cada um dos filmes. 
+    <!-- Container para a imagem -->
+    <div class="image-container">
+      <img src="assets/sobre.jpeg" alt="Catolog Tv" />
+    </div>
 
-
-     link da API: <a href="https://www.themoviedb.org/">The movie db</a> 
+    <!-- Título e Descrição do Projeto -->
+    <div class="text-content">
+      <h2>Sobre o Nosso Projeto</h2>
+      <p>
+        Este projeto foi desenvolvido para a cadeira CÓDIGOS DE ALTA PERFORMANCE MOBILE, com o objetivo de fazer 3 telas e consumir uma API pública a qual está sendo usada nesse projeto é a TMDB, com o intuito de listar filmes populares e detalhar sobre cada um dos filmes.
+      </p>
+      <p>
+        Link da API: <a href="https://www.themoviedb.org/">The movie db</a>
+      </p>
+      <p>
+        Alexandre Julio Avelino da Silva - 01648836 <br />
+        Thiago Silva de Souza - 01582033 <br />
+        Igor Thiago de Oliveira Silva - 01609891 <br />
+        José Cleyton Pereira de Santana - 01277306 <br />
+        Breno Marques da Silva Santos - 10008876 <br />
+        Arthur Vinícius Albuquerque Dos Santos – 01570824 <br />
+        Bruno Soares - 11000133
+      </p>
+    </div>
   </div>
 
-
-
+  <!-- Texto que muda de cor ao passar o mouse -->
+  <p [style.color]="textColor" class="hover-text">
+    Passe o mouse sobre este texto para mudar a cor!
+  </p>
 </ion-content>

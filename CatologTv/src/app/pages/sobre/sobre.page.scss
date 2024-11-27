@@ -1,32 +1,52 @@
-.sobre-container {
-    padding: 20px;
-  }
-  
-  .image-container {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .image-container img {
-    width: 80%;  
-    max-width: 400px;  
-    border-radius: 10px;  
-  }
-  
-  .description-container {
-    text-align: center;
-  }
-  
-  .description-container h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .description-container p {
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
+.description-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-container {
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza a imagem */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Adiciona borda arredondada à imagem */
+}
+
+.text-content {
+  margin-bottom: 20px;
+  max-width: 800px; /* Limita a largura do conteúdo */
+  font-size: 16px;
+}
+
+.text-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.text-content p {
+  margin-bottom: 15px;
+}
+
+.text-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.text-content a:hover {
+  text-decoration: underline;
+}
+
+.hover-text {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
